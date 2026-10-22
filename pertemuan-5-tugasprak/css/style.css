@@ -1,0 +1,445 @@
+:root {
+    --g-blue: #4285f4;
+    --g-blue-dark: #1a73e8;
+    --g-blue-soft: #e8f0fe;
+    --g-red: #ea4335;
+    --g-yellow: #fbbc05;
+    --g-green: #34a853;
+    --surface: #ffffff;
+    --page-background: #f8f9fa;
+    --text: #202124;
+    --muted-text: #5f6368;
+    --border: #dadce0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    background-color: var(--page-background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ANOTASI */
+.note {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--muted-text);
+    background-color: #fff8c5;
+    border: 1px dashed #e0c94a;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 10px 0 0;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    background-color: var(--surface);
+    color: var(--text);
+    border-top: 6px solid;
+    border-image: linear-gradient(90deg, var(--g-blue) 0 25%, var(--g-red) 25% 50%, var(--g-yellow) 50% 75%, var(--g-green) 75% 100%) 1;
+    padding: 16px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+.brand p {
+    margin: 0;
+    color: var(--muted-text);
+}
+
+.profile {
+    padding: 8px 20px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background-color: var(--g-blue-soft);
+    color: var(--g-blue-dark);
+}
+
+/* =========================
+   NAV
+   ========================= */
+nav {
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+}
+
+.nav-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    display: block;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--muted-text);
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: var(--g-blue-dark);
+    border-bottom-color: var(--g-blue-dark);
+}
+
+/* =========================
+   MAIN LAYOUT (sidebar di kanan)
+   ========================= */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+.sidebar {
+    order: 2;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--g-green);
+    border-radius: 12px;
+    padding: 20px;
+    align-self: start;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--g-blue-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+}
+
+/* =========================
+   CONTENT
+   ========================= */
+.content {
+    order: 1;
+    min-width: 0;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.hero {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 25px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background-color: var(--surface);
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    min-height: 220px;
+    border: 2px dashed #a8c7fa;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--g-blue-soft);
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--g-red);
+}
+
+button {
+    padding: 12px 24px;
+    border: 1px solid var(--g-blue-dark);
+    border-radius: 999px;
+    background-color: var(--g-blue-dark);
+    color: var(--surface);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174ea6;
+}
+
+/* =========================
+   SECTION TITLE
+   ========================= */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title a {
+    color: var(--g-blue-dark);
+}
+
+/* =========================
+   CARD
+   ========================= */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 5px solid var(--g-yellow);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.card-image {
+    height: 140px;
+    background-color: var(--g-blue-soft);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card a {
+    color: var(--g-blue-dark);
+    font-weight: bold;
+}
+
+/* =========================
+   LAYANAN / PRODUK
+   ========================= */
+.layanan {
+    margin-top: 40px;
+}
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.layanan-item {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.layanan-item img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+}
+
+.layanan-item span {
+    padding: 10px;
+    text-align: center;
+    color: var(--text);
+    border-top: 3px solid var(--g-red);
+}
+
+/* =========================
+   KARIER
+   ========================= */
+.karier {
+    margin-top: 40px;
+    padding: 25px 30px;
+    border: 1px solid #ceead6;
+    border-radius: 16px;
+    background-color: #e6f4ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.karier-image {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.karier-text {
+    flex: 1;
+}
+
+.karier h2,
+.karier p {
+    margin: 0;
+}
+
+.karier .note {
+    margin-top: 10px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    background-color: #202124;
+    color: var(--surface);
+    border-top: 4px solid var(--g-blue);
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 900px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        order: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        border-left: 1px solid var(--border);
+        border-top: 5px solid var(--g-green);
+    }
+    .sidebar h3 {
+        width: 100%;
+    }
+    .sidebar a {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 8px 14px;
+    }
+    .sidebar .note {
+        width: 100%;
+    }
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .layanan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   SMARTPHONE
+   ========================= */
+@media (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+    nav a {
+        border-bottom: 1px solid var(--border);
+    }
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .hero-image {
+        min-height: 160px;
+    }
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .layanan-grid {
+        grid-template-columns: 1fr;
+    }
+    .layanan-item img {
+        height: 170px;
+        object-fit: contain;
+    }
+    .karier {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .karier-image {
+        width: 100%;
+        height: 160px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

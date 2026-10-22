@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Company Profile Google</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-wrapper">
+            <div class="brand">
+                <img class="logo" src="images/logo.png" alt="Logo Google">
+                <div>
+                    <h1>Google</h1>
+                    <p>Company Profile</p>
+                </div>
+            </div>
+            <div class="profile">
+                Pengunjung
+            </div>
+        </div>
+        <div class="container">
+            <p class="note">Anotasi HEADER: menampilkan logo dan identitas perusahaan, serta status pengunjung di sisi kanan.</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#produk">Produk</a>
+            <a href="#karier">Karier</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+        <div class="container">
+            <p class="note">Anotasi NAVBAR: menu utama untuk berpindah cepat ke bagian Beranda, Tentang, Produk, Karier, dan Kontak.</p>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container main-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Menu Perusahaan</h3>
+            <a href="#tentang">Profil Perusahaan</a>
+            <a href="#tentang">Visi &amp; Misi</a>
+            <a href="#tentang">Sejarah</a>
+            <a href="#produk">Produk &amp; Layanan</a>
+            <a href="#karier">Karier</a>
+            <a href="#kontak">Berita &amp; Kontak</a>
+            <p class="note">Anotasi SIDEBAR: tautan cepat ke informasi inti perusahaan.</p>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="content">
+
+            <!-- Hero -->
+            <section id="beranda" class="hero">
+                <div class="hero-text">
+                    <p class="label">COMPANY PROFILE</p>
+                    <h2>Selamat Datang di Google</h2>
+                    <p>
+                        Google adalah perusahaan teknologi yang berfokus pada
+                        pencarian informasi dan berbagai layanan digital yang
+                        membantu orang menemukan, menciptakan, dan berbagi.
+                        Didirikan pada 1998, Google kini berada di bawah
+                        Alphabet Inc.
+                    </p>
+                    <button>
+                        Pelajari Lebih Lanjut
+                    </button>
+                    <p class="note">Anotasi HERO: pesan utama dan tombol ajakan bertindak (CTA) di bagian paling atas.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero.png" alt="Banner Google">
+                </div>
+            </section>
+
+            <!-- Tentang -->
+            <section id="tentang">
+                <div class="section-title">
+                    <h2>Tentang Perusahaan</h2>
+                    <a href="#">Lihat Semua</a>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="images/profil.png" alt="Profil Perusahaan">
+                        </div>
+                        <h3>Profil Perusahaan</h3>
+                        <p>
+                            Ringkasan singkat tentang Google dan perannya di dunia teknologi.
+                        </p>
+                        <a href="#">Baca Selengkapnya</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="images/visi-misi.png" alt="Visi dan Misi">
+                        </div>
+                        <h3>Visi &amp; Misi</h3>
+                        <p>
+                            Misi mengorganisir informasi dunia agar mudah diakses dan bermanfaat.
+                        </p>
+                        <a href="#">Baca Selengkapnya</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="images/sejarah.jpg" alt="Sejarah Perusahaan">
+                        </div>
+                        <h3>Sejarah</h3>
+                        <p>
+                            Perjalanan Google sejak berdiri hingga menjadi bagian dari Alphabet.
+                        </p>
+                        <a href="#">Lihat Sejarah</a>
+                    </article>
+                </div>
+                <p class="note">Anotasi CARD GRID: tiga kartu ringkasan (profil, visi &amp; misi, sejarah) dengan tautan ke halaman detail.</p>
+            </section>
+
+            <!-- Produk -->
+            <section id="produk" class="layanan">
+                <h2>Produk &amp; Layanan</h2>
+                <div class="layanan-grid">
+                    <div class="layanan-item">
+                        <img src="images/search.png" alt="Google Search">
+                        <span>Search</span>
+                    </div>
+                    <div class="layanan-item">
+                        <img src="images/maps.png" alt="Google Maps">
+                        <span>Maps</span>
+                    </div>
+                    <div class="layanan-item">
+                        <img src="images/gmail.png" alt="Gmail">
+                        <span>Gmail</span>
+                    </div>
+                    <div class="layanan-item">
+                        <img src="images/youtube.png" alt="YouTube">
+                        <span>YouTube</span>
+                    </div>
+                </div>
+                <p class="note">Anotasi PRODUK &amp; LAYANAN: empat layanan unggulan Google dalam bentuk grid ikon dan gambar.</p>
+            </section>
+
+            <!-- Karier -->
+            <section id="karier" class="karier">
+                <img class="karier-image" src="images/karier.png" alt="Karier di Google">
+                <div class="karier-text">
+                    <h2>Bergabung Bersama Kami</h2>
+                    <p>Temukan lowongan dan peluang karier terbaru.</p>
+                    <p class="note">Anotasi KARIER: ajakan bergabung dengan tombol menuju daftar lowongan.</p>
+                </div>
+                <button>
+                    Lihat Lowongan
+                </button>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="container footer-wrapper">
+            <div>
+                <strong>Google</strong>
+                <p>Company Profile</p>
+            </div>
+            <div>
+                Kontak | Kebijakan Privasi | Media Sosial
+            </div>
+            <div>
+                &copy; Hak Cipta
+            </div>
+        </div>
+        <div class="container">
+            <p class="note">Anotasi FOOTER: kontak, kebijakan privasi, tautan media sosial, dan hak cipta.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
